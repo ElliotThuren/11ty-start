@@ -4,6 +4,14 @@ module.exports = function (eleventyConfig) {
 
     eleventyConfig.addPassthroughCopy("./src/css");
 
+    eleventyConfig.addFilter("randomPost", (arr) => {
+        console.log(arr)
+        arr.sort(() => {
+            return 0.5 - Math.random();
+        });
+        return arr.slice(0, 1);
+    });
+
     return {
         dir: {
             input: "src",
