@@ -7,7 +7,7 @@ templateEngineOverride: njk, md
 <body>
     <nav class="navbar">
     <div class="navbar-inner container">
-        <img src="../sass/sassimg/school_black_36dp.svg" alt="">
+        <img src="../src/sass/webb-komponenter/school_black_36dp.svg/" alt="">
         <a class="navbar-brand" href="#">LOREM-IPSUM</a>
         <ul class="nav">
             <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
