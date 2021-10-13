@@ -1,4 +1,37 @@
+$primary: #ffffff;
+
+$breakpoint-lg: 48rem;
+$breakpont-md: $breakpoint-lg / 2;
+$breakpont-sm: $breakpont-md / 2;
+
+$font-family: "Comic Sans";
+
+* {
+    margin: 0;
+    padding: 0;
+} 
+
 body {
     font-family: sans-serif;
-    background-color: rgba(161, 113, 206, 0.479);
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: $primary;
 }
+
+h1 {
+    font-size: 3rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+@import "../sass/webb-komponenter/components/container";
+
+@import "../sass/webb-komponenter/components/card";
+
+@import "../sass/webb-komponenter/components/footer";
+
+@import "../sass/webb-komponenter/components/cta";
+
+@import "./webb-komponenter/components/nav";

@@ -1,0 +1,54 @@
+.card {
+    position: relative;
+    background-size: cover;
+    height: 100%;
+    width: 381px;
+    &-button {
+        width: 97%;
+        margin: .3rem;
+    &:hover {
+        color: #dcdcdc;
+        background-color: #000;
+      }
+    &:active {
+        color: #dcdcdc;
+        background-color: #5a5a5a;
+      }
+    }
+    &-text {
+        padding: .4rem;
+        height: 95%;
+        width: 95%;
+    }
+    &-group {
+        display: flex;
+        justify-content: space-between;
+        padding-top: .3rem;
+    }
+    &1 {
+        background-color: rgb(115, 230, 230);
+    }
+    &2 {
+        background-color: rgb(122, 236, 122);
+    }
+    &3 {
+        background-color: rgb(93, 137, 202);
+    }
+    &4 {
+        background-color: rgb(235, 109, 235);
+    }
+}
+
+.img {
+    padding: .3rem;
+}
+
+@media screen and (max-width: 24rem) {
+        .card-group {
+            flex-direction: column;
+        }
+
+        .card {
+            width: 100%;
+        }
+}
