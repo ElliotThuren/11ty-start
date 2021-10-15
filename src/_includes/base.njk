@@ -10,6 +10,20 @@
 <body>
     <h1>{{ title }}</h1>
 
+
+<header>
+<div class="card-group">
+        <div class="card card1">
+            <img src="https://picsum.photos/370/101" alt="" class="img">
+            <h1 class="card-text">Illo quasi enim</h1>
+            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus at eaque officia blanditiis voluptate error obcaecati ipsa dolorem quas? Aperiam voluptatem fugiat delectus vero harum quasi quisquam suscipit, consectetur velit?</p>
+ {% for post in collections.post %}
+    <button class="card-text card-button"> <a href="{{ post.url }}">{{ post.data.title }}</a></button>
+ {% endfor %}
+ </div>
+ </div>
+</header>
+
     {{ content | safe }}
 </body>
 </html>
